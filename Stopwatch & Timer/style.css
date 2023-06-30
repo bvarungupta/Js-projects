@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    background-color: #caf0f8;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.control{
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+}
+
+.control > button{
+    background-color: #00b4d8;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 1rem 1.7rem;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 0.5rem;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.hidden{
+    display: none;
+}
+
+.container .card{
+    background-color: #caf0f8;
+    color: rgb(224, 224, 224);
+}
+.card-header{
+    text-align: center;  
+    padding: 1rem;
+    color: #023e8a;
+}
+
+.card-body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -1rem;
+}
+.stopwatch-display > span{
+    font-size: 12rem;
+    font-weight: 500;
+    color: #00b4d8;
+    text-align: center;
+    margin: 0.5rem;
+}
+.btn{
+    padding: 0.7rem 1.5rem;
+    border-radius: 25px;
+    border: none;
+    background-color: #023e8a;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    margin: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.timer-display{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.timer-display > input{
+    font-size: 12rem;
+    width: 16rem;
+    font-weight: 500;
+    color:#023e8a ;
+    text-align: center;
+    background-color: #caf0f8;
+    border: 2px solid #023e8a;
+    outline: none;
+    border-radius: 10px;
+}
+
+.timer-display > .colon{
+    font-size: 12rem;
+    color: #023e8a;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
